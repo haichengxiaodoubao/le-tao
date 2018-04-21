@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./mui/css/mui.min.css">
+
+  <link rel="stylesheet" href="./mui/css/icons-extra.css">
+  <link rel="stylesheet" href="./mui/fonts/mui-icons-extra.ttf">
+  <link rel="stylesheet" href="./mui/css/app.css">
+
+  <style>
+    body {
+      background-color: #c9c9c9;
+    }
+
+    .letao-classify .mui-bar {
+      background-color: #006699;
+    }
+
+    .letao-classify .mui-title {
+      color: #fff;
+    }
+
+    .letao-classify .mui-icon {
+      color: #fff;
+    }
+
+    .letao-classify .mui-badge {
+      display: none;
+    }
+
+    .letao-classify .mui-bar-tab a span {
+      color: #fff;
+    }
+
+    .letao-classify .mui-tab-label {
+      font-size: 11px;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .letao-classify .mui-icon-extra-cart {
+      top: 3px;
+      width: 24px;
+      height: 24px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .letao-classify .mui-icon-extra-cart {
+      font-size: 24px;
+      position: relative;
+      z-index: 20;
+    }
+
+    /* 放大镜 */
+
+    .letao-classify .mui-icon-search {
+      font-weight: 700;
+    }
+
+    /* 搜索框 */
+
+    .letao-classify .mui-bar-nav div {
+      position: absolute;
+      top: 2px;
+      padding: 0px 30px;
+      padding-right: 50px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .letao-classify .mui-bar-nav div input {
+      width: 100%;
+      background-color: #fff;
+    }
+
+    /* 侧边栏 */
+
+    .letao-classify .content {
+      margin-top: 45px;
+    }
+    .letao-classify .left {
+      float: left;
+      width: 100px;
+    }
+    .letao-classify .mui-table-view {
+      /* width: 100px; */
+      text-align: center;
+    }
+
+    .letao-classify .mui-table-view li {
+      background-color: #fff;
+    }
+
+    .letao-classify .mui-table-view-cell:after {
+      left: 0;
+    }
+
+    .letao-classify .mui-table-view .mui-active {
+      background-color: #c9c9c9;
+    }
+
+    /* 商品列表 */
+
+    .letao-classify .right {
+      margin-left: 110px;
+      margin-top: 15px;
+      /* width: 100%; */
+      /* height: 100%; */
+      float: right;
+      /* position: relative; */
+      position: absolute;
+      top:44px;
+      right:0;
+      padding: 2px 2px;
+      background-color: #fff;
+      
+    }
+
+    .letao-classify .right ul {
+      list-style: none;
+      background-color: #fff;
+    }
+
+    .letao-classify .right img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .letao-classify .right li {
+      float: left;
+      width: 33%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="letao-classify">
+    <header id="header" class="mui-bar mui-bar-nav">
+      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+      <a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+      <div>
+        <input type="search">
+      </div>
+    </header>
+    <div class="content">
+      <main>
+        <!-- 侧边栏 -->
+        <div class="left">
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-active">运动馆</li>
+            <li class="mui-table-view-cell">男士馆</li>
+            <li class="mui-table-view-cell">女士馆</li>
+            <li class="mui-table-view-cell">帆布馆</li>
+            <li class="mui-table-view-cell">户外管</li>
+          </ul>
+        </div>
+          <!-- 商品列表 -->
+        <div class="right">
+          
+          <ul>
+            <li>
+              <a href="javascript:;">
+                <img src="./mui/images/default.png" alt="">
+                <p>耐克</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./mui/images/default.png" alt="">
+                <p>耐克</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./mui/images/default.png" alt="">
+                <p>耐克</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./mui/images/default.png" alt="">
+                <p>耐克</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./mui/images/default.png" alt="">
+                <p>耐克</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <nav class="mui-bar mui-bar-tab">
+      <a class="mui-tab-item mui-active" href="#tabbar">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-chat">
+        <span class="mui-icon mui-icon-bars">
+          <span class="mui-badge"></span>
+        </span>
+        <span class="mui-tab-label">分类</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-contact">
+        <span class="mui-icon-extra mui-icon-extra-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-map">
+        <span class="mui-icon mui-icon-person-filled"></span>
+        <span class="mui-tab-label">会员中心</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+
+</html>
